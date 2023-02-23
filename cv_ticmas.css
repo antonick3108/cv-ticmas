@@ -1,0 +1,261 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Oxygen', sans-serif;
+}
+
+#principal {
+    float: left;
+    width: 430px;
+    box-shadow: 5px 5px 10px;
+}
+
+#columna-izquierda {
+    float: left;
+    background-color: rgb(38, 136, 136);
+    width: 320px;
+}
+
+#foto-postulante {
+    box-shadow: 5px 5px 10px;
+} 
+
+img {
+    display: block;
+    height: 210px;
+    width: 220px;
+    padding: 25px 20px 25px 20px;
+    border-radius: 20%;
+    margin: auto;
+    
+}
+
+#titulo-contacto {
+    float: left;
+}
+
+/* El interruptor - cuadro alrededor del control deslizante */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 44px;  
+    height: 20px;  
+}
+  
+  /* Ocultar caja predefinida de HTML */
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+  
+  /* Control deslizante */
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #2f4f4f;
+    -webkit-transition: .4s;  
+    transition: .4s;  
+}
+  
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 12px; 
+    width: 12px;  
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+input:checked + .slider {
+    background-color:  rgb(38, 136, 136);
+}
+
+input:focus + .slider {
+    box-shadow: 0 0 1px  rgb(38, 136, 136);
+}
+  
+input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+  
+  /* deslizador redondeado */
+.slider.round {
+    border-radius: 34px;
+}
+  
+.slider.round:before {
+    border-radius: 50%;
+}
+
+#icono-carta, #icono-telefono, #icono-ubicacion, #icono-twitter {
+    float: left;
+    height: 50px;
+    width: 50px;
+    padding: 10px 10px 10px 10px;
+    margin-left: 0%; 
+}
+
+#correo {
+    float: left;
+    padding: 15px 0px 15px 0px;
+    color: black;
+}
+
+#seccion-telefono {
+    clear: both;
+}
+
+#telefono {
+    float: left;
+    padding: 15px 0px 15px 0px;
+}
+
+#seccion-ubicacion {
+    clear: both;
+}
+
+#ubicacion {
+    float: left;
+    padding: 15px 0px 15px 0px;
+    color: black;
+}
+
+#seccion-twitter {
+    clear: both;
+}
+
+#twitter {
+    float: left;
+    padding: 15px 0px 15px 0px;
+    color: black;
+}
+
+#info-software {
+    clear: both;
+}
+
+#items-software {
+    float: left;
+    padding: 20px 0px 0px 15px;
+}
+
+.software {
+    padding: 10px 0px 0px 0px;
+}
+
+#grilla-progreso {
+    float: left;
+}
+
+#progreso-items {
+    padding-bottom: 10px;
+}
+
+#info-ref {
+    clear: both;
+}
+
+#parrafo-idiomas, #parrafo-ref {
+    margin-left: 15px;
+}
+
+.progress {
+    height: 10px;
+    width: 70%;
+    border: 1px solid  rgb(38, 136, 136);
+    border-radius: 5px;
+    background-color:black ;
+    margin-bottom: 15px;
+    margin-left: 15px;
+}
+
+.progress-bar {
+    height: 100%;
+    background: white;
+    display: flex;
+    align-items: center;
+    transition: width 0.25s;
+    border-radius: 5px;
+}
+
+header {
+    padding-left: 20px;
+}
+
+#nombre-postulante {
+    padding: 10px 0px 7px 0px;
+}
+
+#experiencia {
+    background-image: url("https://i.pinimg.com/736x/58/b6/ef/58b6efcdc169268459d806f620f21679.jpg");
+    background-size: cover;
+    background-position: center center;
+    padding-left: 20px;
+}
+
+.periodo-ciudad {
+    float: left;
+    padding-bottom: 50px;
+    padding-right: 40px;
+}
+
+#educacion {
+    padding-left: 20px;
+}
+
+aside {
+    margin-bottom: 25px;
+}
+
+.años-ciudad {
+    float: left;
+    padding-right: 40px;
+    padding-bottom: 10px;
+}
+
+#intereses {
+    padding-left: 20px;
+    margin-bottom: 11px;
+}
+
+em, h5, address, #nombre-postulante {
+    color: rgb(38, 136, 136);
+    font-weight: bold;
+}
+
+ul {
+    padding-left: 15px;
+}
+
+address {
+    font-size: 13px;
+}
+
+@media only screen and (max-width: 800px) {
+    #principal {
+        width: 100%;
+        margin-left: 2px;
+    }
+
+    #columna-izquierda {
+        width: 100%;
+        padding-left: 20px;
+    }
+}
+
+@media only screen and (min-width: 400px) {
+    hr {
+        width: 90%;
+    }
+}
